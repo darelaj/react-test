@@ -139,7 +139,7 @@ const RadarChart = () => {
 
   return (
     <div className="w-3/4 mx-auto">
-      <h2 className="text-center text-xl font-bold my-4">Radar Chart</h2>
+      <h2 className="text-center text-xl font-bold my-4 dark:text-white">Radar Chart</h2>
       <div className="text-center my-4">
         <select
           value={selectedDataset}

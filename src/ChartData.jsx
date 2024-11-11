@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Bar } from "react-chartjs-2"; 
+import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -68,7 +68,7 @@ const ChartData = () => {
     labels: months, // X-axis labels
     datasets: datas.map((data, index) => ({
       label: data.category, // Category name for the legend
-      data: months.map(month => data.months[month] || 0), // Extract month data or default to 0
+      data: months.map((month) => data.months[month] || 0), // Extract month data or default to 0
       backgroundColor: colors[index % colors.length], // Color for each category
     })),
   };
@@ -88,7 +88,7 @@ const ChartData = () => {
 
   return (
     <div className="w-3/4 mx-auto">
-      <h2 className="text-center text-xl font-bold my-4">
+      <h2 className="text-center text-xl font-bold my-4 dark:text-white">
         Bar Chart Data Kunjungan
       </h2>
       <Bar data={chartData} options={options} />

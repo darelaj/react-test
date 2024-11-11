@@ -83,7 +83,6 @@ const LineChart = () => {
         "#FF9F40",
       ],
       backgroundColor: "#C4D7FF",
-      fill: true,
       borderWidth: 3,
     })),
   };
@@ -103,7 +102,7 @@ const LineChart = () => {
 
   return (
     <div className="w-3/4 mx-auto">
-      <h2 className="text-center text-xl font-bold my-4">
+      <h2 className="text-center text-xl font-bold my-4 dark:text-white">
         Line Chart Data Kunjungan
       </h2>
       <Line data={lineChart} options={options} />

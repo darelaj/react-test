@@ -23,7 +23,7 @@ const TabelData = () => {
 
   return (
     <div>
-      <h2 className="text-center font-semibold text-2xl pb-5 pt-5">
+      <h2 className="text-center font-semibold text-2xl pb-5 pt-5 dark:text-white">
         Tabel Kunjungan Kasepuhan 2024
       </h2>
 
@@ -50,7 +50,10 @@ const TabelData = () => {
           <tbody>
             {datas.length > 0 ? (
               datas.map((data, index) => (
-                <tr key={index} className="border-2 border-gray-200 px-2 py-1">
+                <tr
+                  key={index}
+                  className="border-2 border-gray-200 px-2 py-1 dark:text-white"
+                >
                   <td className="border-2 border-gray-200 px-2 py-1">
                     {data.category}
                   </td>

@@ -23,28 +23,26 @@ const Navbar = () => {
 
   return (
     <nav className="drop-shadow-md bg-white dark:bg-gray-800">
-      <div className="flex justify-between items-center px-5 py-3">
-        <ul className="flex gap-8">
-          <li className="text-md font-semibold text-purple-400 dark:text-purple-200">
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li className="text-md font-semibold text-purple-400 dark:text-purple-200">
-            <NavLink to="/rekapan">Rekapan Transaksi</NavLink>
-          </li>
-          <li className="text-md font-semibold text-purple-400 dark:text-purple-200">
-            <NavLink to="/pendapatan">Data Pendapatan</NavLink>
-          </li>
-          <li className="text-md font-semibold text-purple-400 dark:text-purple-200">
-            <NavLink to="/polar/radar">Polar & Radar</NavLink>
-          </li>
-        </ul>
+      <ul className="flex gap-8 justify-center py-5">
+        <li className="text-md font-semibold text-purple-400 dark:text-purple-200">
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li className="text-md font-semibold text-purple-400 dark:text-purple-200">
+          <NavLink to="/rekapan">Rekapan Transaksi</NavLink>
+        </li>
+        <li className="text-md font-semibold text-purple-400 dark:text-purple-200">
+          <NavLink to="/pendapatan">Data Pendapatan</NavLink>
+        </li>
+        <li className="text-md font-semibold text-purple-400 dark:text-purple-200">
+          <NavLink to="/polar/radar">Polar & Radar</NavLink>
+        </li>
         <button
           onClick={toggleDarkMode}
           className="text-md font-semibold text-purple-400 dark:text-purple-200"
         >
           {isDarkMode ? "Light Mode" : "Dark Mode"}
         </button>
-      </div>
+      </ul>
     </nav>
   );
 };

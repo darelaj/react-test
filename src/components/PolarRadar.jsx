@@ -10,7 +10,7 @@ const PolarRadar = () => {
     // </div>
     <div className="grid grid-cols-2">
       <Polar />
-      <RadarChart/>
+      <RadarChart />
     </div>
   );
 };

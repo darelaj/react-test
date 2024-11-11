@@ -13,8 +13,6 @@ ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
 
 const Polar = () => {
   const [datas, setDatas] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   const fetchDatas = async () => {
     try {
@@ -88,7 +86,7 @@ const Polar = () => {
 
   return (
     <div className="w-3/4 mx-auto">
-      <h2 className="text-center text-xl font-bold my-4">Polar Chart</h2>
+      <h2 className="text-center text-xl font-bold my-4 dark:text-white">Polar Chart</h2>
       <>
         <PolarArea data={polarData()} />
         <button

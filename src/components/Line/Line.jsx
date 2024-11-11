@@ -104,7 +104,7 @@ const LinePen = () => {
 
   return (
     <div className="w-3/4 mx-auto">
-      <h2 className="text-center text-xl font-bold my-4">
+      <h2 className="text-center text-xl font-bold my-4 dark:text-white">
         Line Chart Data Pembayaran
       </h2>
       <Line data={lineData()} options={options} />
