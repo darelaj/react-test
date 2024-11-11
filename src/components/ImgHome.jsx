@@ -1,5 +1,5 @@
 import React from "react";
-import keraton from "../assets/keraton_kasepuhan.jpg";
+import keraton from "../assets/Keraton_kasepuhan.jpg";
 
 const ImgHome = () => {
   return (
